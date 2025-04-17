@@ -1,0 +1,78 @@
+/* Global Styles */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  color: #4a4a4a;
+}
+
+a {
+  color: #6c9dc6;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5a8bb4;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #6c9dc6;
+  border-color: #6c9dc6;
+}
+
+.btn-primary:hover {
+  background-color: #5a8bb4;
+  border-color: #5a8bb4;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c9dc6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a8bb4;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp ease 1s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
